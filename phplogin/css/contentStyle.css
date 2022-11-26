@@ -1,0 +1,29 @@
+/* body css */
+
+.content h2 {
+	margin: 0;
+	padding: 0 0 2px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: black;
+}
+
+.content table td, .content div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+}
+.content table td {
+	padding: 5px;
+}
+.content table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+
+.content > p {
+	padding-top: 20px;
+	margin: 0 0 10px 0;
+}

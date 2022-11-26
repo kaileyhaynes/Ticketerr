@@ -1,0 +1,62 @@
+<!-- External users create a work form from index.html -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+		<meta charset="utf-8">
+		<link href="css/newTicketStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class = "containerSignUp">
+<div class = "ticket">
+<h1>Work Request Form</h1>
+<form action="exterRequestAuthen.php" method="post">
+  <label for="firstName"></label>
+  <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+  
+  <label for="lastName"></label>
+  <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+  
+  <label for="affiliation"></label>
+  <select id="affiliation" name="affiliation" placeholder="Choose your affiliation:" required>
+    <option value="Student">Student</option>
+    <option value="Professor">Professor</option>
+    <option value="Faculty">Faculty</option>
+    <option value="ITS Employee">ITS Employee</option>
+  </select>
+  
+  <label for="phoneNum"></label>
+  <input type="text" id="phoneNum" name="phoneNum" placeholder="Your phone number" required>
+  
+  <label for="roomNum"></label>
+  <input type="text" id="roomNum" name="roomNum" placeholder="Issue's room number" required>
+  
+  <label for="issue"></label>
+  <input type="text" id="issue" name="issue" placeholder="Issue" required>
+  
+  <label for="description"></label>
+  <input type="text" id="description" name="description" placeholder="Short issue description" required>
+
+  <!--
+  <input type="button" onclick="cancel()" value="Cancel">
+  <input type="submit" value="Submit">
+  -->
+  <div class = "btn-group">
+    <input type="button" onclick="cancel()" value="Cancel">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+</div>
+</div>
+
+<script>
+  function cancel() {
+    window.location = "index.html";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- Nav top for each screen inside Ticketerr -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home Page</title>
+		<link href="css/navStyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<script> src = "html/newTicketForm.html" </script>
+	</head>
+	<body>
+		<header>
+			<!-- top navigation -->
+			<nav class = "navtop">
+				<div>
+					<h1> TICKETERR </h1>
+					<a href = "home.php"><i class = "fas fa-home"></i>Home</a>
+					<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
+					<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				</div>
+			</nav>
+
+			<!-- left navigation -->
+			<nav class = "sidenav">
+				<div>
+					<h3>Welcome!</h3>
+					<button class = "logout" onclick = "logout()">Not you? Sign out.</button>
+					
+					<!-- <a href="logout.php">Not you? Sign out.</p></a> -->
+					
+					<button onclick="showDashboard()">Dashboard</button>
+					<button onclick="createTicket()">+ New ticket</button></a>
+					<button onclick="yourTickets()">Your tickets</button>
+					<button onclick="showAgents()">Agents</button>
+					<!-- make only accessible to admin when finished -->
+					<button onclick="showAnalytics()">Analytics</button>
+				</div>
+			</nav>
+		</header>
+
+		<!-- left nav button directory -->
+		<script>
+            function showDashboard() {
+                /*go to home.php*/
+				window.location = "home.php";
+            }
+
+            function createTicket() {
+                /*pop-up the ticket creation form*/
+				window.location = "newTicketForm.php";
+            }
+
+            function yourTickets() {
+                /*sort through tickets and 
+                display ones the user created 
+                or is assigned to*/
+				window.location = "home.php";
+            }
+
+            function showAgents() {
+                /*go to agents.php*/
+				window.location = "agents.php";
+            }
+
+            function showAnalytics() {
+                /*go to analytics.php*/
+				window.location = "analytics.php";
+
+            }
+
+			function logout() {
+				/*logout*/
+				window.location = "index.html";
+			}
+        </script>
+
+		<div class="content" style="padding: 125px 200px">
